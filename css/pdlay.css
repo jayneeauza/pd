@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+html, body {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-size:14px;
+}
+
+*, *:before, *:after {
+	box-sizing:inherit;
+}
+
+.pd-cntnr:after, .pd-cntnr:before, .pd-row:after, .pd-row:before {
+	content:"";
+	display:table;
+	clear:both;
+}
