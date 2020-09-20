@@ -1,5 +1,11 @@
 $(document).ready(function() {
+	// window.scrollTo(0,0);
 	w3.includeHTML();
+
+	$(".pd-row-2").css("opacity", "0");
+	$(".pd-row-4").css("opacity", "0");
+	$(".pd-row-3 > .pd-clmn").css("top", "100px");
+	// $(window).scrollTop(0);
 });
 
 $(window).scroll(function(evnt) {
@@ -17,13 +23,16 @@ $(window).scroll(function(evnt) {
 			opacity:'1'
 		});
 	}
-	else if (scroll >= 1500 && scroll <= 2000) {
+	else if (scroll >= 1500 && scroll <= 4000) {
 		document.getElementById("divnav").style.top = "0";
 		$(".pd-row-4").animate({
 			opacity:'1'
 		});
 	}
 	else {
+		$(".pd-row-2").css("opacity", "0");
+		$(".pd-row-4").css("opacity", "0");
+		$(".pd-row-3 > .pd-clmn").css("top", "100px");
 		document.getElementById("divnav").style.top = "-80px";
 	}
 });
