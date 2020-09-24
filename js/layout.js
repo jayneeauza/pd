@@ -10,7 +10,10 @@ $(document).ready(function() {
 
 $(window).scroll(function(evnt) {
 	var scroll = $(window).scrollTop();
-	if (scroll >= 200 && scroll <= 999) {
+	if (scroll == 100) {
+		document.getElementById("divnav").style.top = "0";
+	}
+	else if (scroll >= 200 && scroll <= 999) {
 		document.getElementById("divnav").style.top = "0";
 		$(".pd-row-2").animate({
 			opacity:'1'

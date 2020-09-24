@@ -80,12 +80,22 @@
 		height:560px;
 	}
 
+	#divsbcrbe .cl-bod-cntnt #divbody {
+		padding:5.3em 0em;
+		width:500px;
+	}
+
 	#divft > .w3-row {
 		width:1400px;
 	}
 }
 
 @media only screen and (min-width:1200px) and (max-width:1366px) {
+	.pd-mn .cl-bod-cntnt #divbody {
+		display:block;
+		margin:auto;
+	}
+
 	#divindx #divhnav {
 		position:absolute;
 		top:40px;
@@ -129,6 +139,10 @@
 
 	#divindx #divbody .pd-row-3 > .pd-clmn {
 		height:540px;
+	}
+
+	#divsbcrbe .cl-bod-cntnt #divbody {
+		width:500px;
 	}
 
 	#divft > .w3-row {
@@ -448,11 +462,47 @@ p {
 	height: 100%;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
-	/*opacity:0.5;*/
 	color:#FFFFFF;
 }
 
 #divindx #divbody .pd-row-5 .w3-row img {
+	width:100%;
+}
+
+#divsbcrbe #divbody > .w3-row:nth-child(1) {
+	/*color:#707070;*/
+	color:#888;
+	letter-spacing:0.5px;
+}
+
+#divsbcrbe #divbody > .w3-row:nth-child(2) input {
+	margin-bottom:1em;
+	padding:1em 1.5em;
+	outline:none;
+	letter-spacing:0.5px;
+	/*background-color:rgba(18,135,171, 0.1);*/
+	background-color:#f7f7f7;
+	width:100%;
+	border:none;
+	font-family:latoL;
+	transition-duration:0.5s;
+}
+
+#divsbcrbe #divbody > .w3-row:nth-child(2) input:hover,
+#divsbcrbe #divbody > .w3-row:nth-child(2) input:focus {
+	background-color:#FFFFFF;
+	box-shadow:  0 0 6px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	-o-box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	/*font-weight:bold;*/
+}
+
+#divsbcrbe #divbody > .w3-row:nth-child(2) input:focus {
+	font-weight:bold;
+}
+
+#divsbcrbe #divbody .pd-btn-3 {
 	width:100%;
 }
 
@@ -569,12 +619,6 @@ p {
 	outline:none;
 }
 
-.pd-btn-1:hover {
-	border:1px solid transparent;
-	color:#FFFFFF;
-	background-color:#003466;
-}
-
 .pd-btn-2 {
 	border:2px solid #1287AB;
 	color:#1287AB;
@@ -589,7 +633,31 @@ p {
 	outline:none;
 }
 
+.pd-btn-3 {
+	border:1px solid #1287AB;
+	color:#1287AB;
+	font-family:workR;
+	font-size:14px;
+	padding:0.8em 2em;
+	background:transparent;
+	letter-spacing:1px;
+	transition:0.5s;
+	cursor:pointer;
+	outline:none;
+}
+
+.pd-btn-1:hover {
+	border:1px solid transparent;
+	color:#FFFFFF;
+	background-color:#003466;
+}
+
 .pd-btn-2:hover {
+	background-color:#1287AB;
+	color:#FFFFFF;
+}
+
+.pd-btn-3:hover {
 	background-color:#1287AB;
 	color:#FFFFFF;
 }
