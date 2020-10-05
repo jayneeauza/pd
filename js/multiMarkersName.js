@@ -1,17 +1,22 @@
+//Multi Markers WebAR-AR.js and Aframe - Playing the Archive - Connected Environment CASA-UCL
+
+//Global Variable
 var markersURLArray=[];
 var markersNameArray=[];
 
 AFRAME.registerComponent('markers_start',{
   init:function(){
     console.log('Add markers to the scene');
+
     var sceneEl = document.querySelector('a-scene');
     
-    //lists of the markers
+    //list of the markers
     for(var i=1; i<19; i++)
     {
       var url="resources/markers/pattern-Individual_Blocks-"+i+".patt";
       markersURLArray.push(url);
-      markersNameArray.push('Marker_'+i);      
+      markersNameArray.push('Marker_'+i);
+      //console.log(url);
     }
 
     for(var k=0; k<18; k++)
@@ -24,7 +29,7 @@ AFRAME.registerComponent('markers_start',{
       markerEl.setAttribute('registerevents','');
       sceneEl.appendChild(markerEl);
 
-      //Adding a text to each marker
+      //Adding text to each marker
       var textEl = document.createElement('a-entity');
       
       textEl.setAttribute('id','text');
@@ -36,3 +41,21 @@ AFRAME.registerComponent('markers_start',{
     }
   }
 });
+
+
+//Detect marker found and lost
+AFRAME.registerComponent('registerevents', {
+    init: function () {
+      const marker = this.el;
+
+      marker.addEventListener("markerFound", ()=> {
+        var markerId = marker.id;
+        console.log('Marker Found: ', markerId);
+      });
+
+      marker.addEventListener("markerLost",() =>{
+        var markerId = marker.id;
+        console.log('Marker Lost: ', markerId);
+      });
+    },
+  });
