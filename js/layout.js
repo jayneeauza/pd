@@ -1,7 +1,5 @@
 $(document).ready(function() {
 	// window.scrollTo(0,0);
-	// screenfull.request();
-	alert("adfdf");
 	w3.includeHTML();
 
 	$(".pd-row-2").css("opacity", "0");
