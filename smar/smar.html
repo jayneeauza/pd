@@ -26,6 +26,9 @@
      renderer="logarithmicDepthBuffer: true;"
      embedded
      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+          <a-assets>
+               <a-asset-item id="santa" src="/nft/gltfsamples/Scene_1.glb"></a-asset-item>
+          </a-assets>
           <a-nft
           type="nft"
           url="https://jayneeauza.github.io/pd/smar/nft/1/119973311_795788661235617_870449520898665919_n"
@@ -34,8 +37,8 @@
           smoothTolerance=".01"
           smoothThreshold="5">
                <a-entity
-               gltf-model="https://jayneeauza.github.io/pd/smar/nft/gltfsamples/Scene_1.glb"
-               scale="100 100 100"
+               gltf-model="#santa"
+               scale="40 40 40"
                position="0 0 0">
                </a-entity>
           </a-nft>
