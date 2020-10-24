@@ -26,9 +26,9 @@
      renderer="logarithmicDepthBuffer: true;"
      embedded
      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
-          <a-assets timeout="30000">
+          <!-- <a-assets timeout="30000">
               <a-asset-item id="santa" src="https://jayneeauza.github.io/pd/smar/nft/gltfsamples/ballanimation.glb"></a-asset-item>
-          </a-assets>
+          </a-assets> -->
           <a-nft
           type="nft"
           url="https://jayneeauza.github.io/pd/smar/nft/1/119973311_795788661235617_870449520898665919_n"
@@ -37,7 +37,7 @@
           smoothTolerance=".01"
           smoothThreshold="5">
                <a-entity
-               gltf-model="#santa"
+               gltf-model="https://jayneeauza.github.io/pd/smar/nft/gltfsamples/ballanimation.glb"
                scale="40 40 40"
                position="0 0 0">
                </a-entity>
@@ -56,7 +56,7 @@
                </a-entity>
           </a-nft> -->
           <!-- static camera that moves according to the device movemenents -->
-          <a-entity camera></a-entity>
+          <a-entity camera look-controls position="0 0 0"></a-entity>
      </a-scene>
 </body>
 </html>
