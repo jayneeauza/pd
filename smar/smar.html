@@ -3,6 +3,9 @@
 <head>
      <meta charset="utf-8" />
      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="8thwall:renderer" content="aframe:1.0.4">
+     <meta name="8thwall:package" content="@8thwall.xrextras">
+
      <title>AR</title>
      <!-- import aframe and then ar.js with image tracking / location based features -->
      <script src="js/aframe-master.min.js"></script>
@@ -43,19 +46,22 @@
                position="-1 0.5 -3">
                </a-entity>
           </a-nft>
-          <!-- <a-nft
-          type="nft"
-          url="https://jayneeauza.github.io/pd/smar/nft/2/119789032_327163215010377_3962827983061247210_n"
-          smooth="true"
-          smoothCount="10"
-          smoothTolerance=".01"
-          smoothThreshold="5">
-               <a-entity
-               gltf-model="https://jayneeauza.github.io/pd/smar/nft/gltfsamples/GroundVehicle.glb"
-               scale="40 40 40"
-               position="50 100 0">
-               </a-entity>
-          </a-nft> -->
+          
+          <!-- add capture button -->
+          <xrextras-capture-button capture-mode="photo"></xrextras-capture-button>
+
+          <!-- configure capture settings -->
+          <xrextras-capture-config
+          watermark-image-url="./assets/8logo.png"
+          watermark-max-width="100"
+          watermark-max-height="10"
+          file-name-prefix="ufo-image-"
+          request-mic="manual"
+          ></xrextras-capture-config>
+
+          <!-- add capture preview -->
+          <xrextras-capture-preview></xrextras-capture-preview>
+
           <!-- static camera that moves according to the device movemenents -->
           <a-entity camera look-controls position="0 1.6 0"></a-entity>
      </a-scene>
