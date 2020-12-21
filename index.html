@@ -4,156 +4,195 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="ico/ico-promeyr.png"/>
-	<title>ProMeyr Digitals</title>
+	<title>Sigma IT Services</title>
 	<link rel="stylesheet" type="text/css" href="css/layout.css">
-	<link rel="stylesheet" type="text/css" href="css/scroll.css">
-	<link rel="stylesheet" type="text/css" media="screen and (min-width:992px)" href="css/layoutcontent.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width:992px)" href="css/pdlay.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width:991px)" href="css/m/ss.css">
 	<script type="text/javascript" src="js/angular.min.js"></script>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/w3.js"></script>
-	<script type="text/javascript" src="js/layout.js"></script>
+	<script type="text/javascript" src="js/pdcon.js"></script>
 </head>
 <body>
-	<div id="divindx">
-		<div id="divnav" class="w3-row mhdn" w3-include-html="nav.html"></div>
-		<div id="divhnav" class="w3-row mhdn">
-			<ul class="cl-nav">
-				<a href="index"><li>HOME</li></a>
-				<li>PORTFOLIO</li>
-				<a href="services"><li>SERVICES</li></a>
-				<li>CONTACT</li>
+	<div id="divindx" class="pd-mn">
+		<div id="pd-nav" class="w3-row mhdn w3-top" w3-include-html="nav.html"></div>
+		<button id="pd-mnav">☰</button>
+		<div id="pd-hnav" class="w3-row mhdn">
+			<ul class="cl-pd-nav">
+				<li class="cl-nav-li">X</li>
+				<a href="index"  class="cl-nav-a"><li>HOME</li></a>
+				<a href="#"  class="cl-nav-a"><li>ABOUT</li></a>
+				<a href="services"  class="cl-nav-a"><li>SERVICES</li></a>
+				<a href="#"  class="cl-nav-a"><li>CONTACT</li></a>
 			</ul>
 		</div>
-		<div id="divbody" class="w3-row">
-			<div class="w3-row pd-row-1 w3-display-container">
-				<img src="images/bnr.png" class="cl-img-bnr">
-				<div class="cl-ovrly"></div>
-				<div class="w3-row w3-display-middle">
-					<div class="pd-clmn">
-						<img src="ico/ico-promeyr.png" class="cl-bnr-pd">
-					</div>
-					<div class="pd-clmn">
-						<h1>ProMeyr Digitals</h1>
-						<p>Premier Digital Promotions</p>
-						<ul>
-							<li>FREE Website + Maintenance</li>
-							<li>FREE Web hosting + Domain</li>
-							<li>Digital Marketing Team</li>
-							<li>Technical Support Team</li>
-						</ul>
-						<!-- <p>Starting at P599/month</p> -->
-						<a href="subscribe"><button class="pd-btn w3-animate-opacity">Starting at P599/month*</button></a>
+		<div id="pd-body">
+			<div class="w3-row pd-row-1">
+				<img src="imgs/bn/pdb.jpg" class="cl-img-bnr">
+				<div class="pd-bg-grad"></div>
+				<div class="w3-row">
+					<h3>SIGMA</h3>
+					<h3>IT SERVICES</h3>
+					<p>Stay Connected and Venture Opportunities</p>
+					<a href="subscribe"><button class="pd-btn w3-animate-opacity">TALK TO US</button></a>
+					<div class="cl-icosoc">
+						<img src="imgs/ico/ico-ig-b.png" width="30" height="30">
+						<img src="imgs/ico/ico-twi-b.png" width="32" height="32">
+						<img src="imgs/ico/ico-fb-b.png" width="18" height="30">
 					</div>
 				</div>
 			</div>
-			<div class="cl-bod-cntnt">
-				<div class="w3-row pd-row-2">
-					<div class="pd-clmn">
+			<div class="pd-bod-cntnt">
+				<div class="w3-row pd-row-2 w3-center">
+					<h3>SERVICES OFFERED</h3>
+					<p class="cl-lbl">Digitally integrate your vision with high-performance services</p>
+					<div class="column">
 						<div class="w3-row">
-							<h1>Responsive Web Designs</h1>
-							<p class="cl-lbl-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
+							<img src="imgs/ico/ico-webdev.png">
 						</div>
 						<div class="w3-row">
-							<ul>
-								<li>e-commerce</li>
-								<li>business</li>
-								<li>education</li>
-								<li>booking</li>
-								<li>portfolio</li>
-							</ul>
-						</div>
-					</div>		
-					<img src="images/gadget.png" class="w3-right cl-img">
-				</div>
-				<div class="w3-row pd-row-3">
-					<h1>Engaging Digital Content</h1>
-					<p class="cl-lbl-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua.</p>
-					<div class="pd-clmn">
-						<div class="w3-row">
-							<img src="images/s1.JPG">
-						</div>
-						<div class="w3-row">
-							<h3>Location Shoot</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-							<span>Gallery</span>
+							<p class="cl-lbl-1">Web Design and Development</p>
+							<p class="cl-lbl-2">Enable higher website performance with client-centric designs, features and global feel functional approach that help reach the clients business objectives faster with a terrific end to end customization.</p>
 						</div>
 					</div>
-					<div class="pd-clmn">
+					<div class="column">
 						<div class="w3-row">
-							<img src="images/s2.JPG">
+							<img src="imgs/ico/ico-itinfra.png">
 						</div>
 						<div class="w3-row">
-							<h3>Product Shoot</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-							<span>Gallery</span>
-						</div>
-					</div>
-					<div class="pd-clmn">
-						<div class="w3-row">
-							<img src="images/s3.JPG">
-						</div>
-						<div class="w3-row">
-							<h3>Portrait/Landscape</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-							<span>Gallery</span>
+							<p class="cl-lbl-1">IT Infrastructure Management</p>
+							<p class="cl-lbl-2">Get the expertise, talent, and tools required to create, optimize, and integrate cloud technologies, automation, security, business analytic, hardware and software that help generate the clients infrastructural resources policies, processes and other technical resources.</p>
 						</div>
 					</div>
-				</div>
-				<div class="w3-row pd-row-4">
-					<div class="pd-clmn">
-						<video width="100%" height="400" controls>
-						  <source src="movie.mp4" type="video/mp4">
-						  <source src="movie.ogg" type="video/ogg">
-						Your browser does not support the video tag.
-						</video>
+					<div class="column">
+						<div class="w3-row">
+							<img src="imgs/ico/ico-security.png">
+						</div>
+						<div class="w3-row">
+							<p class="cl-lbl-1">Security Development</p>
+							<p class="cl-lbl-2">An intense level of security and mobility for the clients applications, data, network, and systems from cyberthreats, attacks and breaches.</p>
+						</div>
 					</div>
-					<div class="pd-clmn">
-						<h1>High Quality Graphics</h1>
-						<p class="cl-lbl-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<p>Learn More</p>
+					<div class="column">
+						<div class="w3-row">
+							<img src="imgs/ico/ico-systemdev.png">
+						</div>
+						<div class="w3-row">
+							<p class="cl-lbl-1">System Development and Management</p>
+							<p class="cl-lbl-2">Collaborate, manage, and built an end to end system that analyze your technical aspects in business requirements with high security and increased competitiveness that will help the clients in adopting, deploying, implementing, and document control.</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="w3-row">
+							<img src="imgs/ico/ico-networkdev.png">
+						</div>
+						<div class="w3-row">
+							<p class="cl-lbl-1">Networking Development and Management</p>
+							<p class="cl-lbl-2">Secure, design, and analyze data for the clients’ fast speed roadmap for each platform that will redefine communication either be human, machines, or devices.</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="w3-row">
+							<img src="imgs/ico/ico-itautomation.png">
+						</div>
+						<div class="w3-row">
+							<p class="cl-lbl-1">IT Automation</p>
+							<p class="cl-lbl-2">Experience the increase of efficiency, lower costs, and improve the speed and quality deployment in creating repeatable instructions, and processes to reduce human interaction with IT System. </p>
+						</div>
 					</div>
 				</div>
-				<div class="w3-row pd-row-5">
-					<h1>Four Steps to your Website</h1>
-					<div class="w3-row w3-display-container">
-						<img src="images/h1.JPG" class="w3-display-middle">
-						<div class="cl-ovrly">
-							<div class="pd-clmn">
-								<h1>01</h1>
-								<h3>Consultation</h3>
-								<p>Let us personally/virtually discuss your business’ digital marketing strategies.</p>
-							</div>
-							<div class="pd-clmn">
-								<h1>02</h1>
-								<h3>Development</h3>
-								<p>We will then create the customized website designs and content that is suitable to your business/organization.</p>
-							</div>
-							<div class="pd-clmn">
-								<h1>03</h1>
-								<h3>Launch</h3>
-								<p>Your website will now be accessible online by your customers and target market through your <b>free</b> personalized web address.</p>
-							</div>
-							<div class="pd-clmn">
-								<h1>04</h1>
-								<h3>Maintenance</h3>
-								<p>We are here for you and not leave you hanging.</p>
-							</div>
+				<div class="w3-row w3-center">
+					<p>Sigma IT Services offer opportunities created by the team that connects the technical needs and technical capabilities of the evolving IT industry.</p>
+				</div>
+				<div class="w3-row w3-center">
+					<h3>INDUSTRIES WE SERVE</h3>
+					<p class="cl-lbl">We offer hardware, software and support for every enterprise that needed information technology, from infrastructure to platforms, database to system, and manual to automation.</p>
+					<div class="column">
+						<div class="w3-row">
+							<img src="imgs/ico/ico-academe.png">
+						</div>
+						<div class="w3-row">
+							<label>ACADEME</label>
 						</div>
 					</div>
-					<div class="w3-row">
-						<div class="pd-clmn">
-							<h2>Premier Digital Promotions</h2>
-							<p>Talk to us for a <b>free and non-binding</b> consultation.</p>
+					<div class="column">
+						<div class="w3-row">
+							<img src="imgs/ico/ico-bankingfinance.png">
 						</div>
-						<div class="pd-clmn">
-							<a href="subscribe"><button class="pd-btn-2">GET STARTED</button></a>
+						<div class="w3-row">
+							<label>BANKING AND FINANCE</label>
 						</div>
+					</div>
+					<div class="column">
+						<div class="w3-row">
+							<img src="imgs/ico/ico-government.png">
+						</div>
+						<div class="w3-row">
+							<label>GOVERNMENT</label>
+						</div>
+					</div>
+					<div class="column">
+						<div class="w3-row">
+							<img src="imgs/ico/ico-healthcare.png">
+						</div>
+						<div class="w3-row">
+							<label>HEALTHCARE</label>
+						</div>
+					</div>
+					<div class="column">
+						<div class="w3-row">
+							<img src="imgs/ico/ico-hospitality.png">
+						</div>
+						<div class="w3-row">
+							<label>HOSPITALITY</label>
+						</div>
+					</div>
+					<div class="column">
+						<div class="w3-row">
+							<img src="imgs/ico/ico-it.png">
+						</div>
+						<div class="w3-row">
+							<label>INFORMATION TECHNOLOGY</label>
+						</div>
+					</div>
+					<div class="column">
+						<div class="w3-row">
+							<img src="imgs/ico/ico-retail.png">
+						</div>
+						<div class="w3-row">
+							<label>RETAIL</label>
+						</div>
+					</div>
+					<div class="column">
+						<div class="w3-row">
+							<img src="imgs/ico/ico-utilities.png">
+						</div>
+						<div class="w3-row">
+							<label>UTILITIES</label>
+						</div>
+					</div>
+				</div>
+				<div class="w3-row">
+					<h3 class="w3-center">WE WOULD TO HEAR FROM YOU</h3>
+					<div class="column left">
+						<span>+639 205 052 0145 <br>
+						sigma@sample.com <br>
+						address address address</span>
+						<div class="cl-icosoc">
+							<img src="imgs/ico/ico-ig-b.png" width="30" height="30">
+							<img src="imgs/ico/ico-twi-b.png" width="32" height="32">
+							<img src="imgs/ico/ico-fb-b.png" width="18" height="30">
+						</div>
+					</div>
+					<div class="column right">
+						<input type="text" class="w3-input pd-inpt" placeholder="Email">
+						<textarea class="w3-input pd-inpt cl-inpt-msg" placeholder="Your Message"></textarea>
+						<button class="pd-btn w3-right">SUBMIT</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="divft" class="w3-row" w3-include-html="ft.html"></div>
+		<div id="pd-ft" class="w3-row" w3-include-html="ft.html"></div>
 	</div>
 </body>
 </html>
