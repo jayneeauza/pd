@@ -33,6 +33,19 @@ $(document).ready(function() {
 		}
 	});
 
+	$("#pd-hnav .cl-pd-nav a").click(function() {
+/*		if(this.hash!=="") {
+			event.preventDefault();
+			var h = this.hash;
+			$('html, body').animate({
+				scrollTop:$(hash).offset().top
+			}, 1000, function (){
+				window.location.hash=h;
+			});
+		}*/
+			this.hash;
+	});
+
 	$("#divindx #pd-mnav").click(function() {
 		$("#pd-hnav").fadeIn("fast");
 	});
