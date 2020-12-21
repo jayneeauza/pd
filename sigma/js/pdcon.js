@@ -11,6 +11,7 @@ $(document).ready(function() {
 			$(".pd-row-2").animate({
 				opacity:'1'
 			});
+			$("#pd-nav .pd-clmn").fadeOut('fast');
 		}
 		else if (scroll >= 1000 && scroll <= 1499) {
 			document.getElementById("pd-nav").style.top = "0";
@@ -31,5 +32,13 @@ $(document).ready(function() {
 			$(".pd-row-3 > .pd-clmn").css("top", "100px");
 			document.getElementById("pd-nav").style.top = "-80px";
 		}
+	});
+
+	$("#divindx #pd-mnav").click(function() {
+		$("#pd-hnav").fadeIn("fast");
+	});
+
+	$("#pd-hnav .cl-pd-nav .cl-nav-li").click(function() {
+		$("#pd-hnav").fadeOut("fast");
 	});
 });
