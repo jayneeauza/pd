@@ -11,7 +11,6 @@ $(document).ready(function() {
 			$(".pd-row-2").animate({
 				opacity:'1'
 			});
-			$("#pd-nav .pd-clmn").fadeOut('fast');
 		}
 		else if (scroll >= 1000 && scroll <= 1499) {
 			document.getElementById("pd-nav").style.top = "0";
